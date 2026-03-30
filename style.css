@@ -35,22 +35,21 @@ body{
     gap: 70px;
     padding: 24px 0;
     list-style: none;
-    
 }
 
 .nav-links li a{
+    display: inline-block;
     text-decoration: none;
     color: #f7f7f2;
     font-size: 14px;
     line-height: 100%;
-    letter-spacing: 1%;
+    letter-spacing: 1%; 
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .nav-links li a:hover{
     color: #ccd5ae;
-    transform: scale(1.5);
-    
+    transform: scale(1.2);
 }
 
 .social-links{
@@ -131,6 +130,13 @@ body{
     border: 1px solid #212f45;
     gap: 10px; 
     box-shadow: 0 0 20px rgba(5, 20, 12, 0.445);
+}
+
+.cta-btn:hover{
+    background-color: #f7f7f2;
+    color: #132a13;
+    transform: scale(1.05);
+    transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .right-container{
