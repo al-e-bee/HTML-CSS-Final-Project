@@ -6,7 +6,7 @@
 
 body{
     font-family: "Inter", sans-serif;
-    background-color: #f7f7f2;
+    background-color: #ABDADC;
 }
 
 .navigation{
@@ -16,7 +16,7 @@ body{
 }
 
 .navbar{
-    background-color: #132a13;
+    background-color: #6E026F;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,7 @@ body{
     gap: 95px;
     height: 70px;
     width: 1100px;
-    /* box-shadow: 7px 17px 24px rgba(100, 223, 223, 0.288); */
+    box-shadow: 7px 17px 24px rgba(92, 0, 116, 0.384);
 }
 
 .nav-links{
@@ -40,7 +40,7 @@ body{
 .nav-links li a{
     display: inline-block;
     text-decoration: none;
-    color: #f7f7f2;
+    color: #F1E6C9;
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 1%; 
@@ -48,7 +48,7 @@ body{
 }
 
 .nav-links li a:hover{
-    color: #ccd5ae;
+    color: #FA891A;
     transform: scale(1.2);
 }
 
@@ -62,11 +62,11 @@ body{
 
 .social-links i{
     font-size: 1.5em;
-    color: #f7f7f2;
+    color: #F1E6C9;
 }
 
 .social-links i:hover{
-    color: #ccd5ae;
+    color: #FA891A;
     transform: scale(1.2);
     transition: transform 0.2s ease, color 0.2s ease;
 }
@@ -87,11 +87,12 @@ body{
 }
 
 .hero-title{
+    font-family: "Merriweather", serif;
     font-weight: 800;
     font-size: 44px;
     line-height: 100%;
     letter-spacing: 0%;
-    color: #132a13;
+    color: #6E026F;
 }
 
 .hero p{
@@ -100,7 +101,7 @@ body{
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 1%;
-    color: #132a13;
+    color: #6E026F;
 }
 
 .hero img{
@@ -109,7 +110,7 @@ body{
     border-radius: 50%;
     object-position: center;
     object-fit: cover;
-    box-shadow: 0 0 20px rgba(30, 42, 58, 0.445);
+    box-shadow: 0 0 20px rgba(58, 96, 114, 0.493);
 }
 
 .contact {
@@ -122,19 +123,20 @@ body{
     display: flex;
     align-items: center;
     text-decoration: none;
-    background-color: #132a13;
-    color: #f7f7f2;
+    text-transform: uppercase;
+    background-color: #FA891A;
+    color: #6E026F;
     padding: 21px 64px;
     padding-left: 64px ;
     border-radius: 4px;
-    border: 1px solid #212f45;
+    border: 1px solid #FA891A;
     gap: 10px; 
-    box-shadow: 0 0 20px rgba(5, 20, 12, 0.445);
+    box-shadow: 0 0 20px rgba(22, 76, 90, 0.445);
 }
 
 .cta-btn:hover{
-    background-color: #f7f7f2;
-    color: #132a13;
+    background-color: #6E026F;
+    color: #ABDADC;
     transform: scale(1.05);
     transition: transform 0.2s ease, color 0.2s ease;
 }
@@ -147,8 +149,10 @@ body{
 }
 
 .collaborations h4{
+    font-family: "Merriweather", serif;
     margin-left: 180px;
-    color: #132a13;
+    color: #6E026F;
+    letter-spacing: 1%;
 }
 
 .collabs{
@@ -169,5 +173,6 @@ body{
     height: 60px;
     width: 160px;
     border-radius: 6px;
-    background-color: #132a13;
+    background-color: #6E026F;
+    box-shadow: 5px 8px 25px rgba(92, 0, 116, 0.384);
 }
