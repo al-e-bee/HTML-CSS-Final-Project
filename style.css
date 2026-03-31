@@ -15,16 +15,24 @@ body{
     margin: 0 85px;
 }
 
+.menu-toggle{
+    color: #F1E6C9;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
 .navbar{
     background-color: #6E026F;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px  95px 28px 95px;
+    padding: 24px 5%;
     border-radius: 0 0 8px 8px;
-    gap: 95px;
+    width: 90%;
     height: 70px;
-    width: 1100px;
+    max-width: 1100px;
+    margin: 0 auto;
     box-shadow: 7px 17px 24px rgba(92, 0, 116, 0.384);
 }
 
@@ -71,12 +79,22 @@ body{
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
+.container{
+        width: 90%;
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
 .hero{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 32px;
-    padding: 180px;
+    padding: 100px;
     height: 700px;
 }
 
@@ -136,7 +154,7 @@ body{
 
 .cta-btn:hover{
     background-color: #6E026F;
-    color: #ABDADC;
+    color: #FA891A;
     transform: scale(1.05);
     transition: transform 0.2s ease, color 0.2s ease;
 }
@@ -148,31 +166,147 @@ body{
     align-items: center;
 }
 
-.collaborations h4{
-    font-family: "Merriweather", serif;
-    margin-left: 180px;
-    color: #6E026F;
-    letter-spacing: 1%;
+.stack-vertical{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 10px;
 }
 
-.collabs{
-    width: 920px;
-    height: 60px;
-    margin-left: 180px;
-    margin-top: 20px;
+.collaborations h4{
+    font-family: "Merriweather", serif;
+    padding-left: 75px;
+    color: #6E026F;
+    letter-spacing: 1%;
 }
 
 .logos{
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
+    width: 100%;
 }
 
-.collabs .logos .logo-img{
+.logos .logo-img{
     height: 60px;
     width: 160px;
     border-radius: 6px;
     background-color: #6E026F;
     box-shadow: 5px 8px 25px rgba(92, 0, 116, 0.384);
+}
+
+/* RESPONSIVE STYLING FOR MOBILE DEVICES */
+
+@media only screen and (max-width: 599px){
+
+    
+    .navigation, .collaborations h4, .collabs{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .left-container{
+        padding: 0;
+        align-items: center;
+    }
+
+    .hero img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .collabs .logos .logo-img{
+        width: 100px;
+        height: 40px;
+    }
+
+     .menu-toggle{
+        display: block;
+        font-size: 2em;
+        z-index: 1001;
+    }
+
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 80%;
+        gap: 20px;
+        top: 80px;
+        left: 55px;
+        right: 0;
+        background-color: #6E026F;
+        border-radius: 6px;
+        z-index: 1000;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    .nav-links li{
+        text-align: center;
+    }
+
+    .nav-links li a{
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 50px 50px 0;
+    }
+
+    .contact{
+        justify-content: center;
+    }
+
+    .collaborations h4{
+        padding-left: 0;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .collabs{
+        margin: 0;
+        width: 100%;
+    }
+
+    .logos{
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        width: 100%;
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    .logos .logo-img{
+        width: 100%;
+        max-width: 140px;
+        height: 50px;
+    }
 }

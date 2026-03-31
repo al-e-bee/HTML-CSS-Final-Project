@@ -18,7 +18,10 @@
     <header class="navigation">
 
         <div class="navbar">
-            <ul class="nav-links">
+
+             <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+
+            <ul class="nav-links" id="menu">
                 <li><a href="">Home</a></li>
                 <li><a href="">Case Studies</a></li>
                 <li><a href="">Testimonials</a></li>
@@ -38,7 +41,7 @@
     <main>
 
         <section class="hero">
-            
+            <div class="container">
                     <div class="left-container">
                         <h2 class="hero-title">Ali Baker</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa alias corrupti error nobis ipsum asperiores placeat veniam vero totam. Voluptatibus.</p>
@@ -52,15 +55,15 @@
                     <div class="right-container">
                         <img src="/Images/Profile IMG 2.JPG" alt="Photo of Ali Baker">
                     </div> 
-
+                </div>
 
         </section>
 
         <section class="collaborations">
-        
-        <h4>Collaborated With</h4>
+            
+            <div class="container stack-vertical"><h4>Collaborated With</h4>
 
-        <div class="collabs">
+        
             <div class="logos">
                 <img src="Images/Logo 1.svg" class="logo-img" alt="Logo 1">
                 <img src="Images/Logo 2.svg" class="logo-img" alt="Logo 2">
@@ -68,20 +71,21 @@
                 <img src="Images/Logo 4.svg" class="logo-img" alt="Logo 4">
                 <img src="Images/Logo 5.svg" class="logo-img" alt="Logo 5">
             </div>
+    
         </div>
     </section>
 
-        
-
-               
-
-
-            
-
-
-
-
+    
     </main>
+
+    <script>
+
+         function toggleMenu(){
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+
+    </script>
     
 </body>
 </html>
