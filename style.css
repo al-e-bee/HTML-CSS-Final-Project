@@ -123,8 +123,8 @@ body{
 }
 
 .hero img{
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
     object-position: center;
     object-fit: cover;
@@ -144,12 +144,12 @@ body{
     text-transform: uppercase;
     background-color: #ff5f00;
     color: #FFFAE6;
-    padding: 21px 64px;
+    padding: 18px 54px;
     padding-left: 64px ;
     border-radius: 4px;
     /* border: 1px solid #FF5F00; */
     gap: 10px; 
-    box-shadow: 0 0 20px rgba(255, 94, 0, 0.418);
+    box-shadow: 5px 8px 10px rgba(77, 77, 77, 0.356);
 }
 
 .cta-btn:hover{
@@ -189,93 +189,120 @@ body{
 }
 
 .logos .logo-img{
-    height: 60px;
-    width: 160px;
+    height: 50px;
+    width: 135px;
     border-radius: 6px;
     background-color: rgb(0, 35, 121);
-    box-shadow: 5px 8px 25px rgba(0, 35, 121, 0.384);
+    box-shadow: 5px 8px 15px rgba(0, 35, 121, 0.384);
 }
 
 .case-studies{
-    padding: 70px 40px;
-    color: #002379;
+    padding: 60px 80px;
 }
 
-.case-studies h2,
-.case-studies p{
-    text-align: center;
-}
-
-.case-studies h2{
-    margin-bottom: 15px;
-    font-family: "Merriweather", serif;
-}
-
-.case-studies p{
-    display: inline-block;
-    text-wrap: balance;
-    font-size: 1em;
-    line-height: 20px;
-}
-
-.cases{
+.case-container{
     display: flex;
     flex-direction: column;
-    padding: 50px;
     gap: 30px;
-}
-
-.case-card:nth-child(even) .case-study-box{
-    flex-direction: row-reverse;
-}
-
-.case-card:nth-child(even) .case-header{
-    align-items: flex-end;
-    text-align: right;
-}
-
-.case-card:nth-child(even) .contact{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
 }
 
 .case-header{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 10px;
+    padding: 30px;
+    color: #002379;
+    text-align: center;
+    text-wrap: balance;
+    line-height: 20px;
 }
 
-.case-header h4{
+.case-header h2{
     font-family: "Merriweather", serif;
+    font-size: 2em;
 }
 
-.case-study-box{
+.cases{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
+    padding: 30px 20px;
+}
+.container-left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    color: #002379;
+}
+
+.container-left h3{
+    font-family: "Merriweather", serif;
+}
+
+.container-left p{
+    font-size: .9em;
+    line-height: 20px;
+}
+
+.tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Merriweather", serif;
     
+    border-radius: 60px;
+    padding: 15px 40px;
+    width:72px;
+    height: 24px;
+    letter-spacing: 1%;
 }
 
-.case-study-box p{
-    display: inline-block;
-    text-wrap: balance;
+.contact .cta-btn{
+    padding: 10px 25px;
 }
 
-.case-study-box img{
-    height: 300px;
+.container-right{
+    width: 50%;
+}
+
+.container-right img{
     width: 100%;
+    height: 300px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 5px 8px 25px rgba(16, 33, 59, 0.445);
+    box-shadow: 5px 8px 20px rgba(0, 35, 121, 0.384);
 }
 
-.cases .contact .cta-btn{
-    margin-bottom: 20px;
-    padding: 10px 20px;
+.cases:nth-of-type(2){
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.cases:nth-of-type(1) .tag{
+    color: #6E026F;
+    background-color: #6d026f62;
+}
+
+.cases:nth-of-type(2) .tag{
+    background-color: #23722754;
+    color: #237227;
+}
+
+.cases:nth-of-type(3) .tag{
+    background-color: #ff5e004d;
+    color: #ff5f00;
+}
+
+.cases:nth-of-type(1) .cta-btn{
+    color: #FFFAE6;
+    background-color: #6E026F;
+}
+
+.cases:nth-of-type(2) .cta-btn{
+    background-color: #237227;
+    color: #FFFAE6;
 }
 
 .footer-content{
@@ -440,41 +467,5 @@ body{
         height: 50px;
     }
 
-    .case-studies{
-        width: 100%;
-    }
-
-    .case-card{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .case-header{
-        justify-content: center;
-    }
-
-    .case-study-box{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .case-card:nth-child(even) .case-study-box{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .case-card:nth-child(even) .case-header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .case-card:nth-child(even) .contact{
-        justify-content: center;
-    }
+   
 }
