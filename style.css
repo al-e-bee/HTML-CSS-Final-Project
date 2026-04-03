@@ -9,6 +9,8 @@ body{
     background-color: #FFFAE6;
 }
 
+/*  HEADER / NAVIGATION  */
+
 .navigation{
     display: flex;
     align-items: center;
@@ -78,6 +80,8 @@ body{
     transform: scale(1.2);
     transition: transform 0.2s ease, color 0.2s ease;
 }
+
+/*  HERO SECTION  */
 
 .container{
         width: 90%;
@@ -166,6 +170,8 @@ body{
     align-items: center;
 }
 
+/*  COLLABORATIONS SECTION  */
+
 .stack-vertical{
     flex-direction: column;
     align-items: flex-start;
@@ -196,6 +202,8 @@ body{
     box-shadow: 5px 8px 15px rgba(0, 35, 121, 0.384);
 }
 
+/*  CASE STUDIES SECTION  */
+
 .case-studies{
     padding: 60px 80px;
 }
@@ -206,7 +214,7 @@ body{
     gap: 30px;
 }
 
-.case-header{
+.header-text{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -217,7 +225,7 @@ body{
     line-height: 20px;
 }
 
-.case-header h2{
+.header-text h2{
     font-family: "Merriweather", serif;
     font-size: 2em;
 }
@@ -305,10 +313,92 @@ body{
     color: #FFFAE6;
 }
 
+.cases:nth-of-type(3) .cta-btn:hover{
+    background-color: #ff5f00;
+    color: #FFFAE6;
+}
+
+
+/*   TESTIMONIALS SECTION   */
+
+.testimonials{
+    background-color: #002379;
+    color: #FFFAE6;
+    padding-bottom: 20px;
+}
+
+.testimonials .header-text{
+    color: #FFFAE6;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 70px;
+    gap: 30px;
+}
+
+.testimonial-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.testimonial-box::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient(to right, #FFFAE6 20%, transparent 60%);
+    -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.quotation-marks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.quotation-marks span{
+    font-size: 5em;
+}
+
+.quotation-marks p{
+    display: inline-block;
+    text-wrap: balance;
+}
+
+.client{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.client img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+/*  FOOTER SECTION  */
+
 .footer-content{
-    width: 90%;
-    margin: 0 85px;
+    width: 95%;
+    margin: 0 auto;
     border-radius: 8px 8px 0 0;
+    max-width: 1100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
